@@ -22,7 +22,7 @@ label.error {
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/projetoSpringMVC/">Cadastro de
+			<a class="navbar-brand" href="/projetoSpringMVC/home">Cadastro de
 				Funcionários</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -33,7 +33,7 @@ label.error {
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="/projetoSpringMVC/">Página Inicial</a></li>
+						aria-current="page" href="/projetoSpringMVC/home">Página Inicial</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,6 +51,13 @@ label.error {
 									Funcionários</a></li>
 						</ul></li>
 				</ul>
+				<form class="d-flex">
+					<span class="text-white mt-3" style="margin-right: 20px">
+						<small>${usuario_autenticado.nome} (${usuario_autenticado.email})</small> 
+					</span>
+					<a href="/projetoSpringMVC/logout" class="btn btn-outline-secondary mt-2"
+					onclick="return confirm('Deseja realmente sair do sistema?')">Sair do sistema</a>
+				</form>
 			</div>
 		</div>
 	</nav>

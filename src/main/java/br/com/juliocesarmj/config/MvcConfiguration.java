@@ -13,6 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.juliocesarmj.repositories.FuncionarioRepository;
+import br.com.juliocesarmj.repositories.UsuarioRepository;
 
 @Configuration
 @ComponentScan(basePackages="br.com.juliocesarmj")
@@ -48,5 +49,9 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 	@Bean
 	public FuncionarioRepository getFuncionarioRepository() {
 		return new FuncionarioRepository(getDataSource());
+	}
+	
+	@Bean UsuarioRepository getUsuarioRepository() {
+		return new UsuarioRepository(getDataSource());
 	}
 }

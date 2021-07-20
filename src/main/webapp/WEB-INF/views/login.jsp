@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Cadastro de Funcionários</title>
+<title>Acesso ao sistema</title>
 <link rel="stylesheet" href="resources/css/bootstrap.min.css">
 <style>
 input.error {
@@ -31,7 +31,7 @@ label.error {
 						<hr>
 						<h5 class="card-title">Acesso ao sistema</h5>
 
-						<form id="formlogin">
+						<form id="formlogin" action="autenticarUsuario" method="post">
 
 							<label>Email de acesso:</label>
 							<form:input path="dto.email" id="email" name="email" type="text"
