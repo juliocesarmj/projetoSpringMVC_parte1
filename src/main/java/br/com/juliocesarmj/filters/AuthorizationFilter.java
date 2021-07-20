@@ -60,8 +60,7 @@ public class AuthorizationFilter implements Filter {
 				resp.sendRedirect("/projetoSpringMVC/");
 			}
 		}
-		System.out.println("Você está na página: " + req.getServletPath());
-
+		
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
 	}

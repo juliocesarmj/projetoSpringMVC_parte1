@@ -91,9 +91,9 @@ label.error {
 		<h5>Relatório de funcionários</h5>
 		<hr>
 
-		<form id="formrelatorio">
+		<form id="formrelatorio" action="gerarRelatorioFuncionarios" method="post">
 			<div class="row">
-
+				<span>Relatório de funcionários por período de admissão:</span>
 				<div class="col-md-3">
 					<form:input path="dto.dataInicio" type="date" id="datainicio"
 						name="datainicio" class="form-control" />
